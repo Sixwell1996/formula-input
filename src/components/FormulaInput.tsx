@@ -236,7 +236,7 @@ const FormulaInput: React.FC = () => {
             );
             const calcResult = calcFunc(...Object.values(dummyContext));
             setResult(calcResult.toString());
-        } catch (error) {
+        } catch {
             setResult('Error');
         }
     };
